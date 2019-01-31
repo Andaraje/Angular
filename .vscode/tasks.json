@@ -4,13 +4,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "NODE",
             "type": "shell",
-            "command": "echo Hello",
-            "group": {
-                "kind": "build",
-                "isDefault": true
+            "command": "cd C:\\Program Files\\nodejs\\nodevars.bat"
+            
+                
             }
-        }
+        
     ]
 }
