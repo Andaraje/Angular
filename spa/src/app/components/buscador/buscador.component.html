@@ -1,0 +1,13 @@
+<h1>Buscador <small>Marvel y DC</small></h1>
+<div class="card-columns">
+
+    <div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+        <div class="col-md-12">
+            <div class="alert alert-info" role="alert">
+                No existen resultados con el término: {{ termino }}
+            </div>
+        </div>
+    </div>
+
+    <app-heroe-tarjeta [heroe]="heroe" [indice]="heroe.idx" *ngFor="let heroe of heroes"></app-heroe-tarjeta>
+</div>
