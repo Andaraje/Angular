@@ -1,0 +1,123 @@
+<div class="container" width="100%">
+  <br>
+  <h1>Pipes</h1>
+
+
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Variable</th>
+        <th>Pipe</th>
+        <th>Producto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ nombre }}</td>
+        <td> uppercase</td>
+        <td>{{ nombre | uppercase}}</td>
+      </tr>
+      <tr>
+          <td>{{ nombre }}</td>
+          <td> lowercase</td>
+          <td>{{ nombre | lowercase }}</td>
+      </tr>
+      <tr>
+          <td>{{ nombre }}</td>
+          <td> titlecase</td>
+          <td>{{ nombre | titlecase }}</td>
+      </tr>
+      <tr>
+          <td>{{ dinero }}</td>
+          <td> currency:'EUR' </td>
+          <td>{{ dinero | currency:'EUR' }}</td>
+      </tr>
+      <tr>
+        <td>{{ dinero }}</td>
+        <td> currency</td>
+        <td>{{ dinero | currency }}</td>
+    </tr>
+      <tr>
+        <td>{{ nombre }}</td>
+        <td> slice:3 </td>
+        <td>{{ nombre | slice:3 }}</td>
+    </tr>
+    <tr>
+        <td>{{ nombre }}</td>
+        <td> slice:0:3 </td>
+        <td>{{ nombre | slice:0:3 }}</td>
+    </tr>
+    <tr>
+      <td>{{ array }}</td>
+      <td> slice:1:5 </td>
+      <td>{{ array | slice:1:5 }}</td>
+    </tr>
+    <tr>
+      <td>{{ pi }}</td>
+      <td> number:'3.1-5' </td>
+      <td>{{ pi | number:'3.1-5' }}</td>
+    </tr>
+    <tr>
+      <td>{{ dinero }}</td>
+      <td> percent </td>
+      <td>{{ dinero | percent }}</td>
+    </tr>
+    <tr>
+      <td>{{ dinero }}</td>
+      <td> percent:'2.2-2' </td>
+      <td>{{ dinero | percent:'2.2-2' }}</td>
+    </tr>
+    <tr>
+      <td>{{ valorDePromesa }}</td>
+      <td> async </td>
+      <td>{{ valorDePromesa | async }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'medium' </td>
+      <td>{{ fecha | date:'medium' }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'fullDate' </td>
+      <td>{{ fecha | date:'fullDate' }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'dd/MM/yyyy' </td>
+      <td>{{ fecha | date:'dd/MM/yyyy' }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td> Capitalizado </td>
+      <td>{{ nombre2 | capitalizado }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td> Capitalizado </td>
+      <td>{{ nombre2 | capitalizado:false }}</td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  <h3>Slice</h3>
+  <ul>
+    <li *ngFor="let item of array | slice:5:20">
+        {{item}}
+    </li>
+  </ul>
+
+
+
+  <h3>JSON</h3>
+  <pre>
+  {{ heroe | json }}
+  </pre>
+  <br><br><br><br><br>
+
+
+  <h4>Youtube <small>Video</small></h4>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/oJCkNUyhRDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br><br>
+</div>
