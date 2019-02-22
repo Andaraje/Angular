@@ -7,7 +7,7 @@ import { ArtistaComponent } from './components/artista/artista.component';
 export const ROUTES: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'search', component: SearchComponent},
-  {path: 'artista', component: ArtistaComponent},
+  {path: 'artist/:id', component: ArtistaComponent},
   {path: 'home', component: HomeComponent},
   {path: '', pathMatch:'full' , redirectTo: 'home'},
   {path: '**', pathMatch:'full' , redirectTo: 'home'}
