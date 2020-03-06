@@ -1,0 +1,14 @@
+<p>lista works!</p>
+
+<ul>
+    <li><button (click)="verPokemons( 1 )">Kanto</button></li>
+    <li><button (click)="verPokemons( 2 )">Jhoto</button></li>
+</ul>
+<div class="card-columns m-5 fadeIn">
+    <div (click)="verPokemon( item.name )" class="card puntero" *ngFor="let item of region">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+</div>

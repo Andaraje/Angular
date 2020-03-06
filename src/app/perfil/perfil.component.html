@@ -1,0 +1,9 @@
+<div class="card-columns m-5 fadeIn">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">{{ pokemon.name }}</h1>
+        <img [src]="pokemon?.sprites?.front_default" alt="">
+        <p class="card-text" *ngFor="let tipo of pokemon.types">Tipo {{ tipo.type.name }}</p>
+      </div>
+    </div>
+</div>
